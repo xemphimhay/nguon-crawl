@@ -1,0 +1,29 @@
+{
+    "name": "ggg3/nguon-crawler",
+    "description": "kkphim crawler mod",
+    "type": "package",
+    "require": {
+        "haiau009/kkphim-core": "^1.0.0",
+        "intervention/image": "^2.7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "KKPhim\\Crawler\\KKPhimCrawler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kkphim",
+            "email": "support@kkphim.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KKPhim\\Crawler\\KKPhimCrawler\\KKPhimCrawlerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
