@@ -25,12 +25,12 @@ class KKPhimCrawlerServiceProvider extends SP
         config(['plugins' => array_merge(config('plugins', []), [
             'ggg3/nguon-crawler' =>
             [
-                'name' => 'Nguon Crawler',
+                'name' => 'KKPhim Crawler',
                 'package_name' => 'ggg3/nguon-crawler',
                 'icon' => 'la la-hand-grab-o',
                 'entries' => [
-                    ['name' => 'Crawler', 'icon' => 'la la-hand-grab-o', 'url' => backpack_url('/plugin/nguon-crawler')],
-                    ['name' => 'Option', 'icon' => 'la la-cog', 'url' => backpack_url('/plugin/nguon-crawler/options')],
+                    ['name' => 'Crawler', 'icon' => 'la la-hand-grab-o', 'url' => backpack_url('/plugin/kkphim-crawler')],
+                    ['name' => 'Option', 'icon' => 'la la-cog', 'url' => backpack_url('/plugin/kkphim-crawler/options')],
                 ],
             ]
         ])]);
@@ -46,7 +46,7 @@ class KKPhimCrawlerServiceProvider extends SP
 
         config(['kkphim.updaters' => array_merge(config('kkphim.updaters', []), [
             [
-                'name' => 'Nguon Crawler',
+                'name' => 'KKPhim Crawler',
                 'handler' => 'KKPhim\Crawler\KKPhimCrawler\Crawler'
             ]
         ])]);
