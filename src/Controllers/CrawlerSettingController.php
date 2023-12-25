@@ -22,7 +22,7 @@ class CrawlerSettingController extends CrudController
     public function setup()
     {
         CRUD::setModel(Setting::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/plugin/kkphim-crawler/options');
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/plugin/nguon-crawler/options');
         CRUD::setEntityNameStrings('crawler options', 'crawler options');
     }
 

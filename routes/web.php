@@ -16,10 +16,10 @@ Route::group([
     ),
     'namespace'  => 'KKPhim\Crawler\KKPhimCrawler\Controllers',
 ], function () {
-    Route::get('/plugin/kkphim-crawler', 'CrawlController@showCrawlPage');
-    Route::get('/plugin/kkphim-crawler/options', 'CrawlerSettingController@editOptions');
-    Route::put('/plugin/kkphim-crawler/options', 'CrawlerSettingController@updateOptions');
-    Route::get('/plugin/kkphim-crawler/fetch', 'CrawlController@fetch');
-    Route::post('/plugin/kkphim-crawler/crawl', 'CrawlController@crawl');
-    Route::post('/plugin/kkphim-crawler/get-movies', 'CrawlController@getMoviesFromParams');
+    Route::get('/plugin/nguon-crawler', 'CrawlController@showCrawlPage');
+    Route::get('/plugin/nguon-crawler/options', 'CrawlerSettingController@editOptions');
+    Route::put('/plugin/nguon-crawler/options', 'CrawlerSettingController@updateOptions');
+    Route::get('/plugin/nguon-crawler/fetch', 'CrawlController@fetch');
+    Route::post('/plugin/nguon-crawler/crawl', 'CrawlController@crawl');
+    Route::post('/plugin/nguon-crawler/get-movies', 'CrawlController@getMoviesFromParams');
 });
